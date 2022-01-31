@@ -1,0 +1,69 @@
+var obj = [
+{ person: "Gokul", age: "22", company: "GUVI" },
+{ person: "Dhoni", age: "40", company: "GUVI geek" },
+{ person: "Ruturaj", age: "25", company: "GUVI geek network" },
+]
+
+//For Loop
+for(let i=0;i<obj.length;i++){
+   console.log(obj[i])
+}
+//For Each
+obj.forEach((list)=> {
+  console.log(list) 
+});
+//For in Loop
+for(let index in obj){
+    console.log(obj[index])
+}
+//For of Loop
+for(let i of obj){
+    console.log(i)
+}
+
+RESUME USING JSON:
+
+let obj = {
+    Biodata:{
+        name:"Gokul Raj T",
+        age:22,
+        email:"rajgokul@gmail.com",
+        phone:9856523,
+    },
+    Address:{
+        no:29/30,
+        street:"sivasakthinagar",
+        area:"vandipalayam road",
+        city:"cuddalore",
+        state:"Tamilnadu"
+    },
+    Education:{
+        SSLC:{
+          Class:"10th",
+          School:"KMMHSS",
+          Percentage:87.20,
+          Passout:2014
+        },
+        HSC:{
+           Class:"12th",
+           School:"KMMHSS",
+           Percentage:77.50,
+           Passout:2016
+        },
+        UnderGraduate:{
+            Degree:"B.E",
+            Department:"Civil Engineering",
+            CGPA:7.21,
+            passout:"2020"
+        }
+    },
+    Skills:{
+        Programing:"HTML,CSS,JS",
+        Design:"AutoCad,StaadPro,3DSmax"
+    },
+    Project:{
+        name:"Green Bricks",
+        usage:"an green bricks are eco-friendly bricks it is very cost effective"
+    }
+}
+console.log(obj);
